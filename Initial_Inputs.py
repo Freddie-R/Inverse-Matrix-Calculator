@@ -39,8 +39,10 @@ def create_matrix():
         row =[]
 
         for j in range(size):
+            value = 'null'
             #for each valye in each row assign a value
-            value = check_val(input(f"Enter the value for cell ({i},{j}): "),True)
+            while value == 'null':
+                value = check_val(input(f"Enter the value for cell ({i},{j}): "),True)
             #append that value to the row
             row.append(value)
 
