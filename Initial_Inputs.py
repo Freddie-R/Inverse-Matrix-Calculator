@@ -51,5 +51,3 @@ def create_matrix():
 
     #return the matrix
     return matrix
-
-print(create_matrix())
